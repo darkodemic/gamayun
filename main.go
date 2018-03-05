@@ -3,5 +3,5 @@ package gamayun
 import "fmt"
 
 func main() {
-	fmt.Println("Gamayun")
+	fmt.Println("Gamayun Database migration tool.")
 }
