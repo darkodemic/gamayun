@@ -1,4 +1,4 @@
-# gamayun
+# Gamayun
 
 [![CircleCI](https://circleci.com/gh/darkodemic/gamayun/tree/master.svg?style=svg)](https://circleci.com/gh/darkodemic/gamayun/tree/master) 
 [![Build Status](https://travis-ci.org/darkodemic/gamayun.svg?branch=master)](https://travis-ci.org/darkodemic/gamayun)
