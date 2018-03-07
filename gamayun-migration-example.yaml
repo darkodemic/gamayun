@@ -1,0 +1,55 @@
+# Starts with gamayun then what this file does.
+gamayun: migration
+
+# Target Database
+database: DATABASENAME
+
+# Version of migration or something else.
+# We define it here so we would not have to use file names to keep track of it.
+# You can use datatime if you want. Example would be.
+# version: 201803062256_users_table.yaml
+# This example uses regular incrementing versioning.
+version: 1, 2, 3...
+
+# If we are building up a table or taking it down.
+direction: up
+# Name of the table to be created.
+  table: TABLENAME
+  # List of columnts in the table.
+    columns:
+      # Individual column names and all of it properties.
+      # If no property other then the name is provided defaults will be assumed. 
+      # Defaults can be found in document on the wiki.
+        column: COLUMNNAME
+          index: INDEXVALUE
+          type: COLUMNTTYPE
+          notnull: true | false
+          unique: true | false
+          pk: true | false # Primerery key
+          fk: true | false # Foreign key
+          default: COLUMNTDEFAULTVALUE
+          check: CHECKVALUE
+
+        column: COLUMNNAME1
+          index: INDEXVALUE1
+          type: COLUMNTTYPE1
+          notnull: true | false
+          unique: true | false
+          pk: true | false
+          fk: true | false
+          default: COLUMNTDEFAULTVALUE1
+          check: CHECKVALUE1
+
+direction: down
+  table: TABLENAME
+      columns:
+
+        column: COLUMNNAME
+          index: INDEXVALUE
+          type: COLUMNTTYPE
+          notnull: true | false
+          unique: true | false
+          pk: true | false
+          fk: true | false
+          default: COLUMNTDEFAULTVALUE
+          check: CHECKVALUE
