@@ -15,3 +15,4 @@ script:
   - diff -u <(echo -n) <(gofmt -d .)
   - go tool vet .
   - go test -v -race ./...
+  - go build
