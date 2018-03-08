@@ -9,6 +9,7 @@ install:
   - # Skip
 
 script:
+  - curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
   - dep ensure
 #  - go get -t -v ./...
   - diff -u <(echo -n) <(gofmt -d .)
