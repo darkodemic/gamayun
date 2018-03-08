@@ -16,7 +16,9 @@ environment:
 install:
   - echo %PATH%
   - echo %GOPATH%
-  - set PATH=%GOPATH%\bin;c:\go\bin;%PATH%
+  - mkdir %GOPATH%\bin
+  - set GOBIN=%GOPATH%\bin
+  - set PATH=%GOBIN%;c:\go\bin;%PATH%
   - go version
   - go env
 
