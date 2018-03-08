@@ -5,3 +5,6 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/darkodemic/gamayun)](https://goreportcard.com/report/github.com/darkodemic/gamayun)
 
 Database migration package for programs written in Go programming language.
+
+We are using official Go Dep tool. Read more on how to install and use it
+here: [Github Link](https://github.com/golang/dep/)
