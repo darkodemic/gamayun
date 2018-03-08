@@ -10,7 +10,7 @@ clone_folder: c:\gopath\src\github.com\darkodemic\gamayun
 
 environment:
   GOPATH: c:\gopath
-  GOVERSION: 1.10
+  GOVERSION: "1.10"
   APM_TEST_PACKAGES: linter go-signature-statusbar go-debug hyperclick
 
 install:
@@ -23,8 +23,6 @@ install:
   - go env
 
 build_script:
-  - curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
-  - dep ensure
   - go build -o buildOutput\gamayun -i .
 
 deploy: off
