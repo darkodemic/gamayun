@@ -10,13 +10,15 @@ clone_folder: c:\gopath\src\github.com\darkodemic\gamayun
 
 environment:
   GOPATH: c:\gopath
-  GOVERSION: 1.10
+  GOVERSION: "1.10"
   APM_TEST_PACKAGES: linter go-signature-statusbar go-debug hyperclick
 
 install:
   - echo %PATH%
   - echo %GOPATH%
-  - set PATH=%GOPATH%\bin;c:\go\bin;%PATH%
+  - mkdir %GOPATH%\bin
+  - set GOBIN=%GOPATH%\bin
+  - set PATH=%GOBIN%;c:\go\bin;%PATH%
   - go version
   - go env
 
