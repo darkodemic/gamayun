@@ -3,15 +3,13 @@ sudo: false
 
 matrix:
   include:
-    - go: "1.10"
+    - go: "1.11"
     
 install:
   - # Skip
 
 script:
-  - curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
-  - dep ensure
-#  - go get -t -v ./...
+  - go get -t -v ./...
   - diff -u <(echo -n) <(gofmt -d .)
   - go tool vet .
   - go test -v -race ./...
