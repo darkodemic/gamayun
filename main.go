@@ -1,4 +1,4 @@
-package gamayun
+package main
 
 import "fmt"
 
