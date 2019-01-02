@@ -21,3 +21,6 @@
 
 # Go Dep tools vendor folder.
 /vendor/
+
+# Go build outputs
+gamayun
