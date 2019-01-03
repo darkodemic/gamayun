@@ -8,8 +8,11 @@ matrix:
 install:
   - # Skip
 
+env:
+  - GO111MODULE=on
+
 script:
-  - go get -t -v ./...
+  - go get -v ./...
   - diff -u <(echo -n) <(gofmt -d .)
   - go tool vet .
   - go test -v -race ./...
